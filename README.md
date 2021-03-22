@@ -1,0 +1,2 @@
+# testcoin.org
+tetcoin
