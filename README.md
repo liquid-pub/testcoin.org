@@ -1,2 +1,2 @@
 # testcoin.org
-tetcoin
+testcoin
