@@ -1,0 +1,31 @@
+
+<html>
+  <head>
+    <title>spux</title>
+    <link rel="stylesheet" href="css/spux.css" />
+    <script type="application/ld+json" id="data">
+      { "name": "testcoin", "ticker": "TEST" }
+    </script>
+  </head>
+  <body>
+    <script type="module">
+      import { html, render } from './js/spux.js'
+      import './js/dior.js'
+      import Navbar from './components/Navbar.js'
+
+      console.log(di.data)
+
+      render(
+        html`
+
+          <${Navbar} title="Testcoin" />
+
+          Name: ${di.data.name}<br/>
+          Ticker: ${di.data.ticker}
+
+        `,
+        document.body
+      )
+    </script>
+  </body>
+</html>
