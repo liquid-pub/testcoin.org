@@ -1,0 +1,53 @@
+{
+    "html": {
+        "head": {
+            "meta": {
+                "@_charset": "UTF-8"
+            },
+            "title": "testcoin",
+            "link": {
+                "@_rel": "stylesheet",
+                "@_href": "css/spux.css"
+            },
+            "script": {
+                "#text": "{\n        \"asset_id\": \"59fb8b06d94ee4829ddcc66cfe0820e339df552ce4616e5325af23ca28f37b6d\",\n        \"contract\": {\n          \"entity\": {\n            \"domain\": \"testcoin.org\"\n          },\n          \"issuer_pubkey\": \"03f01826c2b79df4d858f857b66ebbd0c956e55ce4e3b98b32c5c945295e1380ac\",\n          \"name\": \"Testcoin\",\n          \"precision\": 8,\n          \"ticker\": \"TEST\",\n          \"version\": 0\n        },\n        \"issuance_txin\": {\n          \"txid\": \"ed9a107828fb81828acf9b9355d031fc1ff10e2b66ee3c229eac49512e884132\",\n          \"vin\": 0\n        },\n        \"issuance_prevout\": {\n          \"txid\": \"c814d820b073e54e0e2b55e24ff6e14822102e0ae3843243da51a0512b8eb3e0\",\n          \"vout\": 0\n        },\n        \"version\": 0,\n        \"issuer_pubkey\": \"03f01826c2b79df4d858f857b66ebbd0c956e55ce4e3b98b32c5c945295e1380ac\",\n        \"name\": \"Testcoin\",\n        \"ticker\": \"TEST\",\n        \"precision\": 8,\n        \"entity\": {\n          \"domain\": \"testcoin.org\"\n        },\n        \"supply\": 1000000\n      }",
+                "@_type": "application/ld+json",
+                "@_id": "data"
+            }
+        },
+        "body": {
+            "script": {
+                "#text": "import { html, render } from './js/spux.js'\n      import './js/dior.js'\n      import Navbar from './components/Navbar.js'\n\n      console.log(di.data)\n\n      render(\n        html`Name: ${di.data.contract.name}Ticker: ${di.data.contract.ticker}Supply: ${di.data.supply}Precision: ${di.data.precision}Domain: ${di.data.entity.domain}Asset ID: ${di.data.asset_id}Public Key: ${di.data.issuer_pubkey}Proof:Transaction:`,\n        document.body\n      )",
+                "@_type": "module",
+                "${Navbar}": {
+                    "@_title": "Testcoin"
+                },
+                "br": [
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    ""
+                ],
+                "a": [
+                    {
+                        "#text": "➦",
+                        "@_target": "_blank",
+                        "@_href": "/.well-known/liquid-asset-proof-${di.data.asset_id}"
+                    },
+                    {
+                        "#text": "➦",
+                        "@_target": "_blank",
+                        "@_href": "https://blockstream.info/liquid/tx/${di.data.issuance_txin.txid}?expand"
+                    }
+                ]
+            }
+        }
+    }
+}

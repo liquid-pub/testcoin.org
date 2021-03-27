@@ -1,18 +1,12 @@
-<script src="https://spux.net/gun"></script>
-  <script src="https://spux.net/sea"></script>
-  <script src="https://spux.net/webrtc"></script>
-  <script src="https://spux.net/open"></script>
-  <script type="application/ld+json" id="data" view="https://spux.net/freeplaneg.js">
-  {
+{
     "map": {
         "@_version": "freeplane 1.8.0",
         "node": {
-            "@_TEXT": "testcoin",
+            "@_TEXT": "testcoin.org",
             "@_FOLDED": false,
             "@_ID": "ID_908760835",
             "@_CREATED": 1616672832459,
-            "@_MODIFIED": 1616804931120,
-            "@_LINK": "index.html",
+            "@_MODIFIED": 1616804899117,
             "@_STYLE": "oval",
             "font": {
                 "@_SIZE": 18
@@ -192,37 +186,102 @@
                 },
                 {
                     "@_NAME": "AutomaticEdgeColor",
-                    "@_COUNTER": 3,
+                    "@_COUNTER": 4,
                     "@_RULE": "ON_BRANCH_CREATION"
                 }
             ],
-            "node": {
-                "@_TEXT": "links",
-                "@_POSITION": "left",
-                "@_ID": "ID_200723922",
-                "@_CREATED": 1616672887799,
-                "@_MODIFIED": 1616672890639,
-                "edge": {
-                    "@_COLOR": "#ff0000"
-                },
-                "node": [
-                    {
-                        "@_TEXT": "tx",
-                        "@_ID": "ID_1170463871",
-                        "@_CREATED": 1616804845002,
-                        "@_MODIFIED": 1616804848157,
-                        "@_LINK": "https://blockstream.info/liquid/tx/ed9a107828fb81828acf9b9355d031fc1ff10e2b66ee3c229eac49512e884132?expand"
+            "node": [
+                {
+                    "@_TEXT": "links",
+                    "@_POSITION": "left",
+                    "@_ID": "ID_200723922",
+                    "@_CREATED": 1616672887799,
+                    "@_MODIFIED": 1616672890639,
+                    "edge": {
+                        "@_COLOR": "#ff0000"
                     },
-                    {
-                        "@_TEXT": "proof",
-                        "@_ID": "ID_1824857751",
-                        "@_CREATED": 1616804862521,
-                        "@_MODIFIED": 1616804866160,
-                        "@_LINK": "https://testcoin.org/.well-known/liquid-asset-proof-59fb8b06d94ee4829ddcc66cfe0820e339df552ce4616e5325af23ca28f37b6d"
+                    "node": [
+                        {
+                            "@_TEXT": "domain",
+                            "@_ID": "ID_1713939624",
+                            "@_CREATED": 1616793777001,
+                            "@_MODIFIED": 1616804843216,
+                            "@_LINK": "https://testcoin.org/"
+                        },
+                        {
+                            "@_TEXT": "tx",
+                            "@_ID": "ID_1170463871",
+                            "@_CREATED": 1616804845002,
+                            "@_MODIFIED": 1616804848157,
+                            "@_LINK": "https://blockstream.info/liquid/tx/ed9a107828fb81828acf9b9355d031fc1ff10e2b66ee3c229eac49512e884132?expand"
+                        },
+                        {
+                            "@_TEXT": "proof",
+                            "@_ID": "ID_1824857751",
+                            "@_CREATED": 1616804862521,
+                            "@_MODIFIED": 1616804866160,
+                            "@_LINK": "https://testcoin.org/.well-known/liquid-asset-proof-59fb8b06d94ee4829ddcc66cfe0820e339df552ce4616e5325af23ca28f37b6d"
+                        }
+                    ]
+                },
+                {
+                    "@_TEXT": "Follow Your Nose",
+                    "@_POSITION": "right",
+                    "@_ID": "ID_589110765",
+                    "@_CREATED": 1616793782677,
+                    "@_MODIFIED": 1616793789716,
+                    "edge": {
+                        "@_COLOR": "#0000ff"
+                    },
+                    "node": {
+                        "@_TEXT": "domain home page",
+                        "@_ID": "ID_1561194012",
+                        "@_CREATED": 1616793790490,
+                        "@_MODIFIED": 1616793805023,
+                        "node": {
+                            "@_TEXT": "link to assets",
+                            "@_ID": "ID_97728876",
+                            "@_CREATED": 1616793805730,
+                            "@_MODIFIED": 1616793808789
+                        }
                     }
-                ]
-            }
+                },
+                {
+                    "@_TEXT": "Descriptions",
+                    "@_POSITION": "right",
+                    "@_ID": "ID_193484510",
+                    "@_CREATED": 1616793810095,
+                    "@_MODIFIED": 1616793814198,
+                    "edge": {
+                        "@_COLOR": "#00ff00"
+                    },
+                    "node": [
+                        {
+                            "@_TEXT": "home page",
+                            "@_ID": "ID_1722364542",
+                            "@_CREATED": 1616793815186,
+                            "@_MODIFIED": 1616793818173
+                        },
+                        {
+                            "@_TEXT": "assets",
+                            "@_ID": "ID_128786551",
+                            "@_CREATED": 1616793818834,
+                            "@_MODIFIED": 1616793820097
+                        }
+                    ]
+                },
+                {
+                    "@_TEXT": "testcoin",
+                    "@_POSITION": "right",
+                    "@_ID": "ID_163394869",
+                    "@_CREATED": 1616804888270,
+                    "@_MODIFIED": 1616804908029,
+                    "@_LINK": "testcoin.mm",
+                    "edge": {
+                        "@_COLOR": "#ff00ff"
+                    }
+                }
+            ]
         }
     }
-}</script>
-  <script type="module" src="https://unpkg.com/spux-shim/web_modules/spux-shim.js"></script>
+}
