@@ -51,6 +51,7 @@
         import Navbar from './components/Navbar.js'
 
         var source = 'https://github.com/liquid-pub/testcoin.org/'
+        var webmaps = './webmaps/'
   
         console.log(di.data)
   
@@ -71,7 +72,7 @@
             Proof: <a target="_blank" href="/.well-known/liquid-asset-proof-${di.data.asset_id}">➦</a><br/>
             Transaction: <a target="_blank" href="https://blockstream.info/liquid/tx/${di.data.issuance_txin.txid}?expand">➦</a><br/>
             <br/>
-            <a target="_blank" href="${source}">Source</a>
+            <a target="_blank" href="${source}">Source</a> | <a target="_blank" href="${webmaps}">Webmaps</a>
   
           `,
           document.body
