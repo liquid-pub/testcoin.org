@@ -63,7 +63,7 @@
 </stylenode>
 </map_styles>
 </hook>
-<hook NAME="AutomaticEdgeColor" COUNTER="4" RULE="ON_BRANCH_CREATION"/>
+<hook NAME="AutomaticEdgeColor" COUNTER="6" RULE="ON_BRANCH_CREATION"/>
 <node TEXT="links" POSITION="left" ID="ID_200723922" CREATED="1616672887799" MODIFIED="1616672890639">
 <edge COLOR="#ff0000"/>
 <node TEXT="domain" ID="ID_1713939624" CREATED="1616793777001" MODIFIED="1616804843216" LINK="https://testcoin.org/"/>
@@ -83,6 +83,9 @@
 </node>
 <node TEXT="testcoin" POSITION="right" ID="ID_163394869" CREATED="1616804888270" MODIFIED="1616804908029" LINK="testcoin.mm">
 <edge COLOR="#ff00ff"/>
+</node>
+<node TEXT="TODO" POSITION="right" ID="ID_1412185423" CREATED="1617065683489" MODIFIED="1617065683490" LINK="TODO.mm">
+<edge STYLE="bezier" COLOR="#00ffff" WIDTH="thin"/>
 </node>
 </node>
 </map>
